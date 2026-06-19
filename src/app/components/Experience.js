@@ -44,9 +44,6 @@ export default function Experience() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal text-center mb-14">
-          <p className="text-zinc-400 font-mono text-sm mb-2 tracking-wider">
-            // WHERE I&apos;VE BEEN
-          </p>
           <h2 className="section-title gradient-text mx-auto">
             Work Experience
           </h2>
