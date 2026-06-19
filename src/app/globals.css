@@ -2,66 +2,10 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: dark --default;
+  themes: light --default, dark;
 }
 
-:root, [data-theme="dark"] {
-  --bg-color: #09090b;
-  --text-color: #f4f4f5;
-  --text-muted: #a1a1aa;
-  
-  --gradient-primary: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
-  --gradient-subtle: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(161, 161, 170, 0.03) 100%);
-  --glow-primary: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.15);
-  --glow-accent: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.15);
-  --glass-bg: rgba(18, 18, 18, 0.65);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  
-  --card-bg: rgba(24, 24, 27, 0.5);
-  --card-border: rgba(255, 255, 255, 0.06);
-  --card-hover-border: rgba(255, 255, 255, 0.15);
-  --card-hover-shadow: rgba(0, 0, 0, 0.6);
-  
-  --text-white-override: #ffffff;
-  --text-slate-400-override: #a1a1aa;
-  --text-slate-300-override: #d4d4d8;
-  --text-slate-200-override: #e4e4e7;
-  --text-slate-500-override: #71717a;
-  
-  --bg-zinc-950-override: #09090b;
-  --bg-zinc-900-override: #18181b;
-  --bg-zinc-800-override: #27272a;
-  
-  --indigo-400-override: #e4e4e7;
-  --indigo-500-override: #f4f4f5;
-  --indigo-600-override: #ffffff;
-  
-  --violet-400-override: #d4d4d8;
-  --violet-500-override: #a1a1aa;
-  --violet-600-override: #71717a;
-
-  --cyan-400-override: #f4f4f5;
-  --cyan-500-override: #d4d4d8;
-  
-  --emerald-400-override: #f4f4f5;
-  --emerald-500-override: #d4d4d8;
-
-  --amber-400-override: #e4e4e7;
-  --amber-500-override: #a1a1aa;
-  
-  --color-zinc-500-override: #71717a;
-  --color-zinc-600-override: #52525b;
-  
-  --bg-white-5-override: rgba(255, 255, 255, 0.05);
-  --bg-white-10-override: rgba(255, 255, 255, 0.1);
-  --bg-white-3-override: rgba(255, 255, 255, 0.03);
-  --bg-white-8-override: rgba(255, 255, 255, 0.08);
-
-  --grid-color: rgba(255, 255, 255, 0.015);
-  --dots-color: rgba(255, 255, 255, 0.04);
-}
-
-[data-theme="light"] {
+:root, [data-theme="light"] {
   --bg-color: #faf7f0; /* Cozy Cream background */
   --text-color: #292524; /* Warm dark stone-800 text */
   --text-muted: #78716c; /* Muted stone-500 */
@@ -116,6 +60,62 @@
 
   --grid-color: rgba(28, 25, 23, 0.025);
   --dots-color: rgba(28, 25, 23, 0.04);
+}
+
+[data-theme="dark"] {
+  --bg-color: #09090b;
+  --text-color: #f4f4f5;
+  --text-muted: #a1a1aa;
+  
+  --gradient-primary: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(161, 161, 170, 0.03) 100%);
+  --glow-primary: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.15);
+  --glow-accent: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.15);
+  --glass-bg: rgba(18, 18, 18, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  
+  --card-bg: rgba(24, 24, 27, 0.5);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --card-hover-border: rgba(255, 255, 255, 0.15);
+  --card-hover-shadow: rgba(0, 0, 0, 0.6);
+  
+  --text-white-override: #ffffff;
+  --text-slate-400-override: #a1a1aa;
+  --text-slate-300-override: #d4d4d8;
+  --text-slate-200-override: #e4e4e7;
+  --text-slate-500-override: #71717a;
+  
+  --bg-zinc-950-override: #09090b;
+  --bg-zinc-900-override: #18181b;
+  --bg-zinc-800-override: #27272a;
+  
+  --indigo-400-override: #e4e4e7;
+  --indigo-500-override: #f4f4f5;
+  --indigo-600-override: #ffffff;
+  
+  --violet-400-override: #d4d4d8;
+  --violet-500-override: #a1a1aa;
+  --violet-600-override: #71717a;
+
+  --cyan-400-override: #f4f4f5;
+  --cyan-500-override: #d4d4d8;
+  
+  --emerald-400-override: #f4f4f5;
+  --emerald-500-override: #d4d4d8;
+
+  --amber-400-override: #e4e4e7;
+  --amber-500-override: #a1a1aa;
+  
+  --color-zinc-500-override: #71717a;
+  --color-zinc-600-override: #52525b;
+  
+  --bg-white-5-override: rgba(255, 255, 255, 0.05);
+  --bg-white-10-override: rgba(255, 255, 255, 0.1);
+  --bg-white-3-override: rgba(255, 255, 255, 0.03);
+  --bg-white-8-override: rgba(255, 255, 255, 0.08);
+
+  --grid-color: rgba(255, 255, 255, 0.015);
+  --dots-color: rgba(255, 255, 255, 0.04);
 }
 
 @theme {
@@ -454,11 +454,11 @@ body {
   background: var(--gradient-primary);
   border: 3px solid var(--bg-color);
   z-index: 2;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(120, 53, 15, 0.15);
 }
 
-[data-theme="light"] .timeline-dot {
-  box-shadow: 0 0 12px rgba(120, 53, 15, 0.15);
+[data-theme="dark"] .timeline-dot {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
 }
 
 /* ===== Skill Badge ===== */
@@ -524,20 +524,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3f3f46, #27272a);
+  background: linear-gradient(to bottom, #d6d3d1, #a8a29e);
   border-radius: 4px;
 }
 
-[data-theme="light"] ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #d6d3d1, #a8a29e);
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3f3f46, #27272a);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #52525b, #3f3f46);
+  background: linear-gradient(to bottom, #a8a29e, #78716c);
 }
 
-[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #a8a29e, #78716c);
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #52525b, #3f3f46);
 }
 
 /* ===== Responsive ===== */
@@ -591,24 +591,29 @@ body {
 }
 
 .theme-toggle-btn {
-  background: var(--bg-white-5-override);
+  background: rgba(28, 25, 23, 0.05);
   border: 1px solid var(--card-border);
 }
 
 .theme-toggle-btn:hover {
-  background: var(--bg-white-10-override);
+  background: rgba(28, 25, 23, 0.1);
 }
 
-[data-theme="light"] input::placeholder,
-[data-theme="light"] textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #a8a29e !important;
 }
 
-[data-theme="light"] .theme-toggle-btn {
-  background: rgba(28, 25, 23, 0.05);
+[data-theme="dark"] .theme-toggle-btn {
+  background: var(--bg-white-5-override);
 }
 
-[data-theme="light"] .theme-toggle-btn:hover {
-  background: rgba(28, 25, 23, 0.1);
+[data-theme="dark"] .theme-toggle-btn:hover {
+  background: var(--bg-white-10-override);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #71717a !important;
 }
 

@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             __html: `
               (function() {
                 try {
-                  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+                  const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
                   document.documentElement.setAttribute('data-theme', savedTheme);
                 } catch (e) {}
               })()

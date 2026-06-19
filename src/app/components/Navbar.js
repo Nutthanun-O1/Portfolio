@@ -17,10 +17,10 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
     setTheme(currentTheme);
   }, []);
 
