@@ -37,7 +37,7 @@ export default function Footer() {
               <FaGithub />
             </a>
             <a
-              href="mailto:Nutthanun.n@gmail.com"
+              href="mailto:Nutthanun.no@gmail.com"
               className="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
               aria-label="Email"
             >

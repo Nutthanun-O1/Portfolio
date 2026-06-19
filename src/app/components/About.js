@@ -13,9 +13,6 @@ export default function About() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal mb-12">
-          <p className="text-indigo-400 font-mono text-sm mb-2 tracking-wider">
-            // WHO I AM
-          </p>
           <h2 className="section-title gradient-text">About Me</h2>
         </div>
 

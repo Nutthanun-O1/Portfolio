@@ -9,9 +9,6 @@ export default function Education() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal text-center mb-14">
-          <p className="text-indigo-400 font-mono text-sm mb-2 tracking-wider">
-            // MY EDUCATION
-          </p>
           <h2 className="section-title gradient-text mx-auto">Education</h2>
         </div>
 

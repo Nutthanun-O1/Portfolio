@@ -26,8 +26,8 @@ const contactInfo = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "Nutthanun.n@gmail.com",
-    href: "mailto:Nutthanun.n@gmail.com",
+    value: "Nutthanun.no@gmail.com",
+    href: "mailto:Nutthanun.no@gmail.com",
     color: "from-indigo-500 to-violet-500",
   },
   {
@@ -48,7 +48,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:Nutthanun.n@gmail.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
+    const mailto = `mailto:Nutthanun.no@gmail.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
     window.open(mailto, "_blank");
   };
 
@@ -59,9 +59,6 @@ export default function Contact() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal text-center mb-14">
-          <p className="text-indigo-400 font-mono text-sm mb-2 tracking-wider">
-            // GET IN TOUCH
-          </p>
           <h2 className="section-title gradient-text mx-auto">Contact Me</h2>
           <div className="flex justify-center mt-4">
             <p className="section-subtitle text-center">
@@ -84,11 +81,10 @@ export default function Contact() {
                     ? "noopener noreferrer"
                     : undefined
                 }
-                className={`glass-card p-5 flex items-center gap-4 ${
-                  info.href
-                    ? "cursor-pointer"
-                    : "cursor-default pointer-events-none"
-                }`}
+                className={`glass-card p-5 flex items-center gap-4 ${info.href
+                  ? "cursor-pointer"
+                  : "cursor-default pointer-events-none"
+                  }`}
               >
                 <div
                   className={`w-12 h-12 rounded-xl bg-gradient-to-br ${info.color} flex items-center justify-center text-white text-lg shadow-lg`}

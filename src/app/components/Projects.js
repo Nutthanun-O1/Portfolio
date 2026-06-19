@@ -57,9 +57,6 @@ export default function Projects() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal text-center mb-10">
-          <p className="text-indigo-400 font-mono text-sm mb-2 tracking-wider">
-            // SELECTED PROJECTS
-          </p>
           <h2 className="section-title gradient-text mx-auto">Featured Work</h2>
           <div className="flex justify-center mt-4">
             <p className="section-subtitle text-center">

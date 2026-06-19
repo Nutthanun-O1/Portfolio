@@ -104,9 +104,6 @@ export default function Certificates() {
       <div className="section-container">
         {/* Header */}
         <div className="reveal text-center mb-14">
-          <p className="text-zinc-400 font-mono text-sm mb-2 tracking-wider">
-            // ACHIEVEMENTS
-          </p>
           <h2 className="section-title gradient-text mx-auto">Certificates & Awards</h2>
           <div className="flex justify-center mt-4">
             <p className="section-subtitle text-center">
